@@ -187,17 +187,18 @@ namespace WindowsFormsApp1
                 return;
             }
 
-            for (int i = 0; i < phone.Length; ++i)
+
+            DialogResult dialogResult = MessageBox.Show("Are you sure to go next step Yes/No", "Update", MessageBoxButtons.YesNo);
+
+            if (dialogResult == DialogResult.Yes)
             {
-                MessageBox.Show(phone[i]);
+                Person p = new Person(ssn,fName,lName,gender,phone.Length,mail.Length,phone,mail);
+                fRegisterAccount f = new fRegisterAccount(p);
+                this.Hide();
+                f.ShowDialog();
+                this.Show();
             }
 
-            Person p = new Person(ssn,fName,lName,gender,phone.Length,mail.Length,phone,mail);
-
-            fRegisterAccount f = new fRegisterAccount(p);
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
         }
 
         bool checkSSNinDB(string ssn)

@@ -152,12 +152,13 @@
             // 
             // closeButton
             // 
-            this.closeButton.Location = new System.Drawing.Point(453, 262);
+            this.closeButton.Location = new System.Drawing.Point(454, 262);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(127, 51);
             this.closeButton.TabIndex = 8;
-            this.closeButton.Text = "PRE-STEP";
+            this.closeButton.Text = "EXIT";
             this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // button1
             // 
@@ -185,6 +186,7 @@
             this.Controls.Add(this.label25);
             this.Controls.Add(this.panel2);
             this.Name = "fRegisterAccount";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fRegisterAccount";
             this.panel2.ResumeLayout(false);
             this.panel30.ResumeLayout(false);

@@ -92,6 +92,10 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show("INSERT FAIL!!!");
             }
+            else
+            {
+                MessageBox.Show("INSERT SUCCESS!!");
+            }
         }
 
         bool checkUsernameinDB(string username)
@@ -103,6 +107,14 @@ namespace WindowsFormsApp1
         private void usernameTextBox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            fLogin f = new fLogin();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
     }
 }

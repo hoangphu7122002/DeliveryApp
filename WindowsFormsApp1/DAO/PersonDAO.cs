@@ -57,12 +57,13 @@ namespace WindowsFormsApp1.DAO
             int numPhone = per.NumberPhone;
             string[] phone = per.Phone;
             string ssn = per.SSN1;
+      
 
             string query = "INSERT INTO PERSON_PHONE VALUES ( @ssn , @phone )";
-            foreach (string p in phone)
+          
+            for (int i = 0; i < numPhone; ++i)
             {
-                MessageBox.Show(p);
-                DataProvider.Instance.ExecuteNonQuery(query, new object[] { ssn, p });
+                DataProvider.Instance.ExecuteNonQuery(query, new object[] { ssn, phone[i]});
             }
         }
 
@@ -73,9 +74,9 @@ namespace WindowsFormsApp1.DAO
             string ssn = per.SSN1;
 
             string query = "INSERT INTO PERSON_MAIL VALUES ( @ssn , @mail )";
-            foreach (string m in mail)
+            for (int i = 0; i < numMail; ++i)
             {
-                DataProvider.Instance.ExecuteNonQuery(query, new object[] { ssn, m });
+                DataProvider.Instance.ExecuteNonQuery(query, new object[] { ssn, mail[i] });
             }
         }
 
