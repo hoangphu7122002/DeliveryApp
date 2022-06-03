@@ -41,7 +41,9 @@ namespace WindowsFormsApp1
             string password = textBoxPassword.Text;
             string username = textBoxUsername.Text;
             string newPassword = textBoxNewPassword.Text;
+
             string retypePassword = textBoxRetypePassword.Text;
+
             if (newPassword != retypePassword)
             {
                 MessageBox.Show("newPassword is different with retypePassword");
@@ -105,6 +107,16 @@ namespace WindowsFormsApp1
         }
 
         private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBoxRetypePassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxNewPassword_TextChanged(object sender, EventArgs e)
         {
 
         }

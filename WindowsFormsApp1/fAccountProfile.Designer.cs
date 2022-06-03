@@ -161,6 +161,7 @@
             this.textBoxNewPassword.Name = "textBoxNewPassword";
             this.textBoxNewPassword.Size = new System.Drawing.Size(400, 22);
             this.textBoxNewPassword.TabIndex = 1;
+            this.textBoxNewPassword.TextChanged += new System.EventHandler(this.textBoxNewPassword_TextChanged);
             // 
             // newPasswordLabel
             // 
@@ -209,6 +210,7 @@
             this.textBoxRetypePassword.Name = "textBoxRetypePassword";
             this.textBoxRetypePassword.Size = new System.Drawing.Size(400, 22);
             this.textBoxRetypePassword.TabIndex = 1;
+            this.textBoxRetypePassword.TextChanged += new System.EventHandler(this.textBoxRetypePassword_TextChanged);
             // 
             // newRetypeLabel
             // 

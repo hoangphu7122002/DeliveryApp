@@ -146,6 +146,10 @@ namespace WindowsFormsApp1
 
             for (int i = 0; i < phone.Length; ++i)
             {
+                if (phone[i].Length == 11)
+                {
+                    phone[i] = phone[i].Substring(1);
+                }
 
                 if (checkPhone(phone[i]) == false)
                 {
@@ -166,6 +170,10 @@ namespace WindowsFormsApp1
             string[] mail = mailTextbox.Text.Split('\r');
             for (int i = 0; i < mail.Length; ++i)
             {
+                if (i > 0)
+                {
+                    mail[i] = mail[i].Substring(1);
+                }
                 if (checkMail(mail[i]) == false)
                 {
                     MessageBox.Show("invalid mail " + mail[i]) ;
@@ -186,6 +194,7 @@ namespace WindowsFormsApp1
                 MessageBox.Show("SSN is exist, please retype another!!");
                 return;
             }
+
 
 
             DialogResult dialogResult = MessageBox.Show("Are you sure to go next step Yes/No", "Update", MessageBoxButtons.YesNo);

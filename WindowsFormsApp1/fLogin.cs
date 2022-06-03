@@ -36,7 +36,12 @@ namespace WindowsFormsApp1
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult dialogResult = MessageBox.Show("DO YOU WANT TO EXIT", "Exit", MessageBoxButtons.YesNo);
+
+            if (dialogResult == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void buttonEnter_Click(object sender, EventArgs e)
