@@ -22,10 +22,7 @@ namespace WindowsFormsApp1
 
         void loadAccount()
         {
-            string query = "EXEC VIEW_ACCOUNT_BY_username @username";
-            string id = "5763894824_EE@test.com";
-
-            dtgvAccount.DataSource = DataProvider.Instance.ExecuteQuery(query,new object[] {id});
+            
         }
 
         private void fAdmin_Load(object sender, EventArgs e)
@@ -59,6 +56,41 @@ namespace WindowsFormsApp1
         }
 
         private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
         {
 
         }

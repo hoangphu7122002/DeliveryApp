@@ -35,20 +35,6 @@
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.listViewAdmin = new System.Windows.Forms.ListView();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.flipTable = new System.Windows.Forms.FlowLayoutPanel();
-            this.labelUsername = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.SSN_CS = new System.Windows.Forms.RichTextBox();
-            this.SSN_EMP = new System.Windows.Forms.RichTextBox();
-            this.SSN_CR = new System.Windows.Forms.RichTextBox();
-            this.TYPEPAY = new System.Windows.Forms.RichTextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.LOC_TO = new System.Windows.Forms.RichTextBox();
             this.Pid = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Type = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.TypeLevel = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -56,10 +42,24 @@
             this.SsnDriver = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Location = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label5 = new System.Windows.Forms.Label();
-            this.PRICE = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.deleteAdminButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.PRICE = new System.Windows.Forms.RichTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.LOC_TO = new System.Windows.Forms.RichTextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.TYPEPAY = new System.Windows.Forms.RichTextBox();
+            this.SSN_CR = new System.Windows.Forms.RichTextBox();
+            this.SSN_EMP = new System.Windows.Forms.RichTextBox();
+            this.SSN_CS = new System.Windows.Forms.RichTextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelUsername = new System.Windows.Forms.Label();
+            this.flipTable = new System.Windows.Forms.FlowLayoutPanel();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -97,14 +97,14 @@
             // profileToolStripMenuItem
             // 
             this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
-            this.profileToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.profileToolStripMenuItem.Text = "UpdateAccount";
             this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.logOutToolStripMenuItem.Text = "LogOut";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
@@ -139,151 +139,6 @@
             this.listViewAdmin.View = System.Windows.Forms.View.Details;
             this.listViewAdmin.SelectedIndexChanged += new System.EventHandler(this.listViewAdmin_SelectedIndexChanged);
             // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(0, 435);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 71);
-            this.panel3.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.deleteAdminButton);
-            this.panel4.Controls.Add(this.button1);
-            this.panel4.Location = new System.Drawing.Point(485, 489);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(446, 48);
-            this.panel4.TabIndex = 3;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.PRICE);
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Controls.Add(this.LOC_TO);
-            this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.TYPEPAY);
-            this.panel5.Controls.Add(this.SSN_CR);
-            this.panel5.Controls.Add(this.SSN_EMP);
-            this.panel5.Controls.Add(this.SSN_CS);
-            this.panel5.Controls.Add(this.label3);
-            this.panel5.Controls.Add(this.label2);
-            this.panel5.Controls.Add(this.label1);
-            this.panel5.Controls.Add(this.labelUsername);
-            this.panel5.Location = new System.Drawing.Point(485, 35);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(449, 102);
-            this.panel5.TabIndex = 4;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
-            // 
-            // flipTable
-            // 
-            this.flipTable.AutoScroll = true;
-            this.flipTable.Location = new System.Drawing.Point(0, 35);
-            this.flipTable.Name = "flipTable";
-            this.flipTable.Size = new System.Drawing.Size(479, 502);
-            this.flipTable.TabIndex = 5;
-            this.flipTable.Paint += new System.Windows.Forms.PaintEventHandler(this.flipTable_Paint);
-            // 
-            // labelUsername
-            // 
-            this.labelUsername.AutoSize = true;
-            this.labelUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelUsername.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUsername.Location = new System.Drawing.Point(3, 3);
-            this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(78, 26);
-            this.labelUsername.TabIndex = 1;
-            this.labelUsername.Text = "SSN_CS";
-            this.labelUsername.Click += new System.EventHandler(this.labelUsername_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 26);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "SSN_CR";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(218, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 26);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "SSN_EMP";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(223, 40);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 26);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "TYPEPAY";
-            // 
-            // SSN_CS
-            // 
-            this.SSN_CS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SSN_CS.Location = new System.Drawing.Point(87, 3);
-            this.SSN_CS.Name = "SSN_CS";
-            this.SSN_CS.Size = new System.Drawing.Size(109, 26);
-            this.SSN_CS.TabIndex = 5;
-            this.SSN_CS.Text = "";
-            // 
-            // SSN_EMP
-            // 
-            this.SSN_EMP.Location = new System.Drawing.Point(315, 3);
-            this.SSN_EMP.Name = "SSN_EMP";
-            this.SSN_EMP.Size = new System.Drawing.Size(128, 26);
-            this.SSN_EMP.TabIndex = 6;
-            this.SSN_EMP.Text = "";
-            // 
-            // SSN_CR
-            // 
-            this.SSN_CR.Location = new System.Drawing.Point(87, 40);
-            this.SSN_CR.Name = "SSN_CR";
-            this.SSN_CR.Size = new System.Drawing.Size(109, 26);
-            this.SSN_CR.TabIndex = 7;
-            this.SSN_CR.Text = "";
-            // 
-            // TYPEPAY
-            // 
-            this.TYPEPAY.Location = new System.Drawing.Point(315, 40);
-            this.TYPEPAY.Name = "TYPEPAY";
-            this.TYPEPAY.Size = new System.Drawing.Size(128, 26);
-            this.TYPEPAY.TabIndex = 8;
-            this.TYPEPAY.Text = "";
-            this.TYPEPAY.TextChanged += new System.EventHandler(this.TYPEPAY_TextChanged);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 73);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 26);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "LOC_TO";
-            // 
-            // LOC_TO
-            // 
-            this.LOC_TO.Location = new System.Drawing.Point(87, 72);
-            this.LOC_TO.Name = "LOC_TO";
-            this.LOC_TO.Size = new System.Drawing.Size(109, 26);
-            this.LOC_TO.TabIndex = 10;
-            this.LOC_TO.Text = "";
-            // 
             // Pid
             // 
             this.Pid.Text = "Pid";
@@ -316,6 +171,70 @@
             // 
             this.Location.Text = "Location";
             // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(0, 435);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 71);
+            this.panel3.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.deleteAdminButton);
+            this.panel4.Controls.Add(this.button1);
+            this.panel4.Location = new System.Drawing.Point(485, 489);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(446, 48);
+            this.panel4.TabIndex = 3;
+            // 
+            // deleteAdminButton
+            // 
+            this.deleteAdminButton.Location = new System.Drawing.Point(357, 3);
+            this.deleteAdminButton.Name = "deleteAdminButton";
+            this.deleteAdminButton.Size = new System.Drawing.Size(84, 42);
+            this.deleteAdminButton.TabIndex = 4;
+            this.deleteAdminButton.Text = "DELETE";
+            this.deleteAdminButton.UseVisualStyleBackColor = true;
+            this.deleteAdminButton.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(267, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(84, 42);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "ADD";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.PRICE);
+            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.LOC_TO);
+            this.panel5.Controls.Add(this.label4);
+            this.panel5.Controls.Add(this.TYPEPAY);
+            this.panel5.Controls.Add(this.SSN_CR);
+            this.panel5.Controls.Add(this.SSN_EMP);
+            this.panel5.Controls.Add(this.SSN_CS);
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Controls.Add(this.label2);
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.labelUsername);
+            this.panel5.Location = new System.Drawing.Point(485, 35);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(449, 102);
+            this.panel5.TabIndex = 4;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            // 
+            // PRICE
+            // 
+            this.PRICE.Location = new System.Drawing.Point(315, 72);
+            this.PRICE.Name = "PRICE";
+            this.PRICE.Size = new System.Drawing.Size(128, 26);
+            this.PRICE.TabIndex = 12;
+            this.PRICE.Text = "";
+            this.PRICE.TextChanged += new System.EventHandler(this.PRICE_TextChanged);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -328,33 +247,114 @@
             this.label5.Text = "PRICE_O";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // PRICE
+            // LOC_TO
             // 
-            this.PRICE.Location = new System.Drawing.Point(315, 72);
-            this.PRICE.Name = "PRICE";
-            this.PRICE.Size = new System.Drawing.Size(128, 26);
-            this.PRICE.TabIndex = 12;
-            this.PRICE.Text = "";
-            this.PRICE.TextChanged += new System.EventHandler(this.PRICE_TextChanged);
+            this.LOC_TO.Location = new System.Drawing.Point(87, 72);
+            this.LOC_TO.Name = "LOC_TO";
+            this.LOC_TO.Size = new System.Drawing.Size(109, 26);
+            this.LOC_TO.TabIndex = 10;
+            this.LOC_TO.Text = "";
             // 
-            // button1
+            // label4
             // 
-            this.button1.Location = new System.Drawing.Point(267, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 42);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "ADD";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 73);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(79, 26);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "LOC_TO";
             // 
-            // deleteAdminButton
+            // TYPEPAY
             // 
-            this.deleteAdminButton.Location = new System.Drawing.Point(357, 3);
-            this.deleteAdminButton.Name = "deleteAdminButton";
-            this.deleteAdminButton.Size = new System.Drawing.Size(84, 42);
-            this.deleteAdminButton.TabIndex = 4;
-            this.deleteAdminButton.Text = "DELETE";
-            this.deleteAdminButton.UseVisualStyleBackColor = true;
-            this.deleteAdminButton.Click += new System.EventHandler(this.button2_Click_1);
+            this.TYPEPAY.Location = new System.Drawing.Point(315, 40);
+            this.TYPEPAY.Name = "TYPEPAY";
+            this.TYPEPAY.Size = new System.Drawing.Size(128, 26);
+            this.TYPEPAY.TabIndex = 8;
+            this.TYPEPAY.Text = "";
+            this.TYPEPAY.TextChanged += new System.EventHandler(this.TYPEPAY_TextChanged);
+            // 
+            // SSN_CR
+            // 
+            this.SSN_CR.Location = new System.Drawing.Point(87, 40);
+            this.SSN_CR.Name = "SSN_CR";
+            this.SSN_CR.Size = new System.Drawing.Size(109, 26);
+            this.SSN_CR.TabIndex = 7;
+            this.SSN_CR.Text = "";
+            // 
+            // SSN_EMP
+            // 
+            this.SSN_EMP.Location = new System.Drawing.Point(315, 3);
+            this.SSN_EMP.Name = "SSN_EMP";
+            this.SSN_EMP.Size = new System.Drawing.Size(128, 26);
+            this.SSN_EMP.TabIndex = 6;
+            this.SSN_EMP.Text = "";
+            // 
+            // SSN_CS
+            // 
+            this.SSN_CS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SSN_CS.Location = new System.Drawing.Point(87, 3);
+            this.SSN_CS.Name = "SSN_CS";
+            this.SSN_CS.Size = new System.Drawing.Size(109, 26);
+            this.SSN_CS.TabIndex = 5;
+            this.SSN_CS.Text = "";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(223, 40);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(86, 26);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "TYPEPAY";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(218, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 26);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "SSN_EMP";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 26);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "SSN_CR";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // labelUsername
+            // 
+            this.labelUsername.AutoSize = true;
+            this.labelUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelUsername.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsername.Location = new System.Drawing.Point(3, 3);
+            this.labelUsername.Name = "labelUsername";
+            this.labelUsername.Size = new System.Drawing.Size(78, 26);
+            this.labelUsername.TabIndex = 1;
+            this.labelUsername.Text = "SSN_CS";
+            this.labelUsername.Click += new System.EventHandler(this.labelUsername_Click);
+            // 
+            // flipTable
+            // 
+            this.flipTable.AutoScroll = true;
+            this.flipTable.Location = new System.Drawing.Point(0, 35);
+            this.flipTable.Name = "flipTable";
+            this.flipTable.Size = new System.Drawing.Size(479, 502);
+            this.flipTable.TabIndex = 5;
+            this.flipTable.Paint += new System.Windows.Forms.PaintEventHandler(this.flipTable_Paint);
             // 
             // fTableManager
             // 
