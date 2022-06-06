@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.registerButton = new System.Windows.Forms.Button();
             this.buttonEnter = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -37,7 +38,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.labelUsername = new System.Windows.Forms.Label();
-            this.registerButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -55,6 +55,16 @@
             this.panel1.Size = new System.Drawing.Size(578, 212);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // registerButton
+            // 
+            this.registerButton.Location = new System.Drawing.Point(402, 151);
+            this.registerButton.Name = "registerButton";
+            this.registerButton.Size = new System.Drawing.Size(83, 41);
+            this.registerButton.TabIndex = 5;
+            this.registerButton.Text = "Register";
+            this.registerButton.UseVisualStyleBackColor = true;
+            this.registerButton.Click += new System.EventHandler(this.registerButton_Click);
             // 
             // buttonEnter
             // 
@@ -131,16 +141,6 @@
             this.labelUsername.TabIndex = 0;
             this.labelUsername.Text = "Username";
             this.labelUsername.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // registerButton
-            // 
-            this.registerButton.Location = new System.Drawing.Point(402, 151);
-            this.registerButton.Name = "registerButton";
-            this.registerButton.Size = new System.Drawing.Size(83, 41);
-            this.registerButton.TabIndex = 5;
-            this.registerButton.Text = "Register";
-            this.registerButton.UseVisualStyleBackColor = true;
-            this.registerButton.Click += new System.EventHandler(this.registerButton_Click);
             // 
             // fLogin
             // 

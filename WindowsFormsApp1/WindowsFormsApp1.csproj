@@ -53,8 +53,12 @@
   <ItemGroup>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\OrderDAO.cs" />
+    <Compile Include="DAO\PackageDAO.cs" />
     <Compile Include="DAO\PersonDAO.cs" />
     <Compile Include="DTO\Account.cs" />
+    <Compile Include="DTO\Order.cs" />
+    <Compile Include="DTO\Package.cs" />
     <Compile Include="DTO\Person.cs" />
     <Compile Include="fAdmin.cs">
       <SubType>Form</SubType>
@@ -68,11 +72,11 @@
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="fAccountProfile.cs">
+    <Compile Include="fUpdateAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fAccountProfile.Designer.cs">
-      <DependentUpon>fAccountProfile.cs</DependentUpon>
+    <Compile Include="fUpdateAccount.Designer.cs">
+      <DependentUpon>fUpdateAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="fRegister.cs">
       <SubType>Form</SubType>
@@ -100,8 +104,8 @@
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fAccountProfile.resx">
-      <DependentUpon>fAccountProfile.cs</DependentUpon>
+    <EmbeddedResource Include="fUpdateAccount.resx">
+      <DependentUpon>fUpdateAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fRegister.resx">
       <DependentUpon>fRegister.cs</DependentUpon>

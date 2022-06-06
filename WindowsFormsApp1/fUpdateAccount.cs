@@ -12,7 +12,7 @@ using WindowsFormsApp1.DTO;
 
 namespace WindowsFormsApp1
 {
-    public partial class fAccountProfile : Form
+    public partial class fUpdateAccount : Form
     {
 
         private Account loginAccount;
@@ -22,7 +22,7 @@ namespace WindowsFormsApp1
             get => loginAccount; set => loginAccount = value;
         }
 
-        public fAccountProfile(Account acc)
+        public fUpdateAccount(Account acc)
         {
             InitializeComponent();
             this.LoginAccount = acc;

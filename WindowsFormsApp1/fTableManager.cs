@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.DAO;
 using WindowsFormsApp1.DTO;
 
 namespace WindowsFormsApp1
@@ -23,9 +24,70 @@ namespace WindowsFormsApp1
             InitializeComponent();
 
             changeAccount();
+            loadOrder();
         }
 
 
+        void loadOrder()
+        {
+            List<Order> orders = OrderDAO.Instance.loadOrderList();
+            foreach (Order order in orders)
+            {
+                Button button = new Button() { Width = OrderDAO.OrderWidth, Height = OrderDAO.OrderHeight };
+                button.Text = "Order" + Environment.NewLine + order.Orderid;
+                button.Tag = order;
+
+                button.Click += myButton_Click;
+                
+                if (order.Status == "PROGRESS")
+                {
+                    button.BackColor = Color.Aqua;
+                }
+                else
+                {
+                    button.BackColor = Color.LightPink;
+                }
+                flipTable.Controls.Add(button);
+            }
+        }
+
+        void myButton_Click(object sender, EventArgs e)
+        {
+            Order order = ((sender as Button).Tag as Order);
+            showListView(order);
+
+        }
+
+        void showListView(Order order)
+        {
+            string order_id = order.Orderid.ToString();
+            SSN_CS.Text = order.Ssn_cr.ToString();
+            SSN_CR.Text = order.Ssn_cs.ToString();
+            SSN_EMP.Text = order.Ssn_emp.ToString();
+            TYPEPAY.Text = order.PaymentType.ToString();
+
+            string ssn_cr = order.Ssn_cr.ToString();
+            string add_cr = PersonDAO.Instance.get_address(ssn_cr);
+
+            LOC_TO.Text = add_cr;
+            PRICE.Text = (OrderDAO.Instance.getCost(add_cr, order_id) * 15).ToString();
+
+
+            listViewAdmin.Items.Clear();
+            List<Package>packages = PackageDAO.Instance.loadPackageList(order_id);
+            foreach (Package item in packages)
+            {
+                ListViewItem listViewItem = new ListViewItem(item.Pid.ToString());
+                listViewItem.SubItems.Add(item.Type.ToString());
+                listViewItem.SubItems.Add(item.TypeLevel.ToString());
+                listViewItem.SubItems.Add(item.Weight.ToString());
+                listViewItem.SubItems.Add(item.SsnDriver.ToString());
+                listViewItem.SubItems.Add(item.Time.ToString());
+                listViewItem.SubItems.Add(item.Location.ToString());
+
+                listViewAdmin.Items.Add(listViewItem);
+            } 
+        }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
@@ -49,7 +111,7 @@ namespace WindowsFormsApp1
 
         private void profileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fAccountProfile f = new fAccountProfile(loginAccount);
+            fUpdateAccount f = new fUpdateAccount(loginAccount);
             this.Hide();
             f.ShowDialog();
             this.Show();
@@ -73,13 +135,92 @@ namespace WindowsFormsApp1
         {
             adminToolStripMenuItem.Enabled = loginAccount.Type == "ADMIN";
             if (adminToolStripMenuItem.Enabled == false) { 
-                employeeToolStripMenuItem.Enabled = loginAccount.Type == "EMPLOYEE";
+                /*employeeToolStripMenuItem.Enabled = loginAccount.Type == "EMPLOYEE";
                 driverToolStripMenuItem.Enabled = loginAccount.Type == "DRIVER";
-                customerToolStripMenuItem.Enabled = loginAccount.Type == "CUSTOMER";
+                customerToolStripMenuItem.Enabled = loginAccount.Type == "CUSTOMER";*/
             }
         }
 
         private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint_2(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void flipTable_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void listViewAdmin_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelUsername_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TYPEPAY_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PRICE_TextChanged(object sender, EventArgs e)
         {
 
         }

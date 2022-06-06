@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class fAccountProfile
+    partial class fUpdateAccount
     {
         /// <summary>
         /// Required designer variable.
@@ -236,7 +236,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "fAccountProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AccountProfile";
+            this.Text = "UpdateAccount";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

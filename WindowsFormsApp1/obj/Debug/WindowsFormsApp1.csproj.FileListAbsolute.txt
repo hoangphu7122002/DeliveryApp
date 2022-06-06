@@ -10,10 +10,10 @@ C:\Users\Admin\Dropbox\My PC (LAPTOP-N0TMGG17)\Desktop\winfromDB\WindowsFormsApp
 C:\Users\Admin\Dropbox\My PC (LAPTOP-N0TMGG17)\Desktop\winfromDB\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Admin\Dropbox\My PC (LAPTOP-N0TMGG17)\Desktop\winfromDB\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\Admin\Dropbox\My PC (LAPTOP-N0TMGG17)\Desktop\winfromDB\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fTableManager.resources
-C:\Users\Admin\Dropbox\My PC (LAPTOP-N0TMGG17)\Desktop\winfromDB\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fAccountProfile.resources
 C:\Users\Admin\Dropbox\My PC (LAPTOP-N0TMGG17)\Desktop\winfromDB\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fAdmin.resources
 C:\Users\Admin\Dropbox\My PC (LAPTOP-N0TMGG17)\Desktop\winfromDB\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fRegister.resources
 C:\Users\Admin\Dropbox\My PC (LAPTOP-N0TMGG17)\Desktop\winfromDB\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fRegisterAccount.resources
 C:\Users\Admin\Dropbox\My PC (LAPTOP-N0TMGG17)\Desktop\winfromDB\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\Admin\Dropbox\My PC (LAPTOP-N0TMGG17)\Desktop\winfromDB\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Admin\Dropbox\My PC (LAPTOP-N0TMGG17)\Desktop\winfromDB\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\Admin\Dropbox\My PC (LAPTOP-N0TMGG17)\Desktop\winfromDB\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fUpdateAccount.resources

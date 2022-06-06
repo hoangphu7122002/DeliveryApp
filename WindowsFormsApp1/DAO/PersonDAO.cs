@@ -96,6 +96,11 @@ namespace WindowsFormsApp1.DAO
         }
 
         
-
+        public string get_address(string ssn_cr)
+        {
+            DataTable dataTable = DataProvider.Instance.ExecuteQuery("SELECT * FROM CUSTOMER_RECEIVE WHERE SSN = '" + ssn_cr + "'");
+            string add_cr = dataTable.Rows[0]["ADDRESS"].ToString();
+            return add_cr;
+        }
     }
 }
