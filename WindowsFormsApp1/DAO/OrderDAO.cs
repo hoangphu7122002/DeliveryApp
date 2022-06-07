@@ -58,5 +58,28 @@ namespace WindowsFormsApp1.DAO
             Single cost = (Single)data.Rows[0]["COST"];
             return cost;
         }
+
+        public bool orderIDinDB (string orderid)
+        {
+            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT * FROM CORDER WHERE ORDERID ='" + orderid +"'");
+            return data.Rows.Count > 0;
+        }
+
+        public int deleteOrder(string orderid)
+        {
+            int res = DataProvider.Instance.ExecuteNonQuery("DELETE FROM CORDER WHERE ORDERID = '" + orderid + "'");
+            return res;
+        }
+
+        public string getStatus(string orderid)
+        {
+            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT STATUS FROM CORDER WHERE ORDERID ='" + orderid + "'");
+            return data.Rows[0]["STATUS"].ToString();
+        }
+
+        public int changeStatus(string orderid)
+        {
+            return DataProvider.Instance.ExecuteNonQuery("UPDATE CORDER SET STATUS = 'CLOSE' WHERE ORDERID ='" + orderid + "'");
+        }
     }
 }

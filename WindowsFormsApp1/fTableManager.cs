@@ -212,7 +212,40 @@ namespace WindowsFormsApp1
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-
+            //
+            string answer = textBoxAdmin.Text;
+            if (answer == "")
+            {
+                MessageBox.Show("Invalid Input OrderID!!!");
+            }
+            else if (OrderDAO.Instance.orderIDinDB(answer) == false)
+            {
+                MessageBox.Show("OrderID not in DB"); 
+            }
+            else {
+                //delete order
+                string status = OrderDAO.Instance.getStatus(answer);
+                if (status == "CLOSE")
+                {
+                    if (OrderDAO.Instance.deleteOrder(answer) > 0)
+                    {
+                        MessageBox.Show("DELETE SUCCESS!!!");
+                        this.Close();
+                        fTableManager f = new fTableManager(this.loginAccount);
+                        this.Hide();
+                        f.ShowDialog();
+                        this.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("SOME ERROR MAY EXIST!!!");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Order IN PROGRESS, NOT FOLLOW DELETE");
+                }
+            }
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -223,6 +256,40 @@ namespace WindowsFormsApp1
         private void PRICE_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            string answer = textBoxAdmin.Text;
+            if (answer == "")
+            {
+                MessageBox.Show("Invalid Input OrderID!!!");
+            }
+            else if (OrderDAO.Instance.orderIDinDB(answer) == false)
+            {
+                MessageBox.Show("OrderID not in DB");
+            }
+            else
+            {
+                //delete order
+                string status = OrderDAO.Instance.getStatus(answer);
+                if (status != "CLOSE")
+                {
+                    if (OrderDAO.Instance.changeStatus(answer) > 0)
+                    {
+                        MessageBox.Show("CHANGE STATUS SUCCESS!!!");
+                        this.Close();
+                        fTableManager f = new fTableManager(this.loginAccount);
+                        this.Hide();
+                        f.ShowDialog();
+                        this.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("SOME ERROR MAY EXIST!!!");
+                    }
+                }
+            }
         }
     }
 }

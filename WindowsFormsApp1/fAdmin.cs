@@ -17,12 +17,13 @@ namespace WindowsFormsApp1
         public fAdmin()
         {
             InitializeComponent();
-            loadAccount();
+            loadEmployeeGridView();
         }
 
-        void loadAccount()
+        void loadEmployeeGridView()
         {
-            
+
+            employeeGridView.DataSource;
         }
 
         private void fAdmin_Load(object sender, EventArgs e)
@@ -93,6 +94,21 @@ namespace WindowsFormsApp1
         private void panel5_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

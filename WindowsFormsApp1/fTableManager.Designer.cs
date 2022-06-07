@@ -45,7 +45,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.deleteAdminButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.PRICE = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -60,6 +59,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
             this.flipTable = new System.Windows.Forms.FlowLayoutPanel();
+            this.textBoxAdmin = new System.Windows.Forms.RichTextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -97,14 +98,14 @@
             // profileToolStripMenuItem
             // 
             this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
-            this.profileToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
             this.profileToolStripMenuItem.Text = "UpdateAccount";
             this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
             this.logOutToolStripMenuItem.Text = "LogOut";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
@@ -180,8 +181,9 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.deleteAdminButton);
             this.panel4.Controls.Add(this.button1);
+            this.panel4.Controls.Add(this.textBoxAdmin);
+            this.panel4.Controls.Add(this.deleteAdminButton);
             this.panel4.Location = new System.Drawing.Point(485, 489);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(446, 48);
@@ -189,22 +191,13 @@
             // 
             // deleteAdminButton
             // 
-            this.deleteAdminButton.Location = new System.Drawing.Point(357, 3);
+            this.deleteAdminButton.Location = new System.Drawing.Point(119, 8);
             this.deleteAdminButton.Name = "deleteAdminButton";
-            this.deleteAdminButton.Size = new System.Drawing.Size(84, 42);
+            this.deleteAdminButton.Size = new System.Drawing.Size(93, 32);
             this.deleteAdminButton.TabIndex = 4;
             this.deleteAdminButton.Text = "DELETE";
             this.deleteAdminButton.UseVisualStyleBackColor = true;
             this.deleteAdminButton.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(267, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 42);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "ADD";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // panel5
             // 
@@ -356,6 +349,24 @@
             this.flipTable.TabIndex = 5;
             this.flipTable.Paint += new System.Windows.Forms.PaintEventHandler(this.flipTable_Paint);
             // 
+            // textBoxAdmin
+            // 
+            this.textBoxAdmin.Location = new System.Drawing.Point(218, 8);
+            this.textBoxAdmin.Name = "textBoxAdmin";
+            this.textBoxAdmin.Size = new System.Drawing.Size(216, 29);
+            this.textBoxAdmin.TabIndex = 7;
+            this.textBoxAdmin.Text = "";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 8);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 32);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "CLOSE";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // fTableManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -415,5 +426,6 @@
         private System.Windows.Forms.RichTextBox PRICE;
         private System.Windows.Forms.Button deleteAdminButton;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RichTextBox textBoxAdmin;
     }
 }

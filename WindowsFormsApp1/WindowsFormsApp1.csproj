@@ -53,10 +53,16 @@
   <ItemGroup>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\DriverDAO.cs" />
+    <Compile Include="DAO\EmployeeDAO.cs" />
     <Compile Include="DAO\OrderDAO.cs" />
     <Compile Include="DAO\PackageDAO.cs" />
     <Compile Include="DAO\PersonDAO.cs" />
+    <Compile Include="DAO\VehicleDAO.cs" />
     <Compile Include="DTO\Account.cs" />
+    <Compile Include="DTO\Employee.cs" />
+    <Compile Include="DTO\Vehicle.cs" />
+    <Compile Include="DTO\Driver.cs" />
     <Compile Include="DTO\Order.cs" />
     <Compile Include="DTO\Package.cs" />
     <Compile Include="DTO\Person.cs" />
