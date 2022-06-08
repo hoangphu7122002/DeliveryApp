@@ -32,6 +32,8 @@ namespace WindowsFormsApp1
             employeeGridView.DataSource = EmployeeList;
             vehicleGridView.DataSource = Vehicle;
 
+
+
             loadEmployeeGridView();
             loadVehicleGridView();
             loadDriverGridView();
@@ -41,9 +43,19 @@ namespace WindowsFormsApp1
             driverAddBind();
             accountAddBind();
             loadVehicleBind();
+
+            notWrite();
             
         }
         
+        void notWrite()
+        {
+            SSN_ACCOUNT_TB.Enabled = false;
+            SSN_DRIVER_TB.Enabled = false;
+            SSN_EMP_TB.Enabled = false;
+            Vnum_Driver_TB.Enabled = false;
+        }
+
         void loadVehicleBind()
         {
             Vnum_Driver_TB.DataBindings.Add(new Binding("TEXT", vehicleGridView.DataSource, "VNUM", true, DataSourceUpdateMode.Never));
@@ -57,6 +69,7 @@ namespace WindowsFormsApp1
             UserName_ACCOUNT_TB.DataBindings.Add(new Binding("TEXT", AccountGridView.DataSource, "UserName", true, DataSourceUpdateMode.Never));
             TYPE_ACCOUNT_TB.DataBindings.Add(new Binding("TEXT", AccountGridView.DataSource, "ATYPE", true, DataSourceUpdateMode.Never));
             ID_ACCOUNT_TB.DataBindings.Add(new Binding("TEXT", AccountGridView.DataSource, "ID", true, DataSourceUpdateMode.Never));
+
         }
 
         void driverAddBind()
