@@ -41,11 +41,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.employeeGridView = new System.Windows.Forms.DataGridView();
-            this.SSN_EMP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EID_EMP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DateBegin_EMP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EXP_EMP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SuperSSN_EMP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -53,12 +48,12 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.SSN = new System.Windows.Forms.Button();
-            this.SALARY_TEXTBOX = new System.Windows.Forms.RichTextBox();
-            this.SU_E_TEXTBOX = new System.Windows.Forms.RichTextBox();
-            this.EXP_TEXTBOX = new System.Windows.Forms.RichTextBox();
-            this.DATEBEGIN_TEXTBOX = new System.Windows.Forms.RichTextBox();
-            this.EID_TEXTBOX = new System.Windows.Forms.RichTextBox();
-            this.SE_TEXTBOX = new System.Windows.Forms.RichTextBox();
+            this.SALARY_EMP_TB = new System.Windows.Forms.RichTextBox();
+            this.SSSN_EMP_TB = new System.Windows.Forms.RichTextBox();
+            this.EXP_EMP_TB = new System.Windows.Forms.RichTextBox();
+            this.DATEBEGIN_EMP_TB = new System.Windows.Forms.RichTextBox();
+            this.EID_EMP_TB = new System.Windows.Forms.RichTextBox();
+            this.SSN_EMP_TB = new System.Windows.Forms.RichTextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel8 = new System.Windows.Forms.Panel();
             this.button20 = new System.Windows.Forms.Button();
@@ -70,27 +65,23 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.button22 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.VNUM_VEHICLE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RNUM_VEHICLE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VTYPE_DRIVER = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Driver_SSN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LI_DRIVER = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EXP_DRIVER = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vehicleGridView = new System.Windows.Forms.DataGridView();
+            this.driverGridView = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.TYPE_DRIVER_TB = new System.Windows.Forms.RichTextBox();
+            this.button23 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
+            this.RNUM_DRIVER_TB = new System.Windows.Forms.RichTextBox();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
+            this.Vnum_Driver_TB = new System.Windows.Forms.RichTextBox();
+            this.exp_DRIVER_TB = new System.Windows.Forms.RichTextBox();
+            this.LisenceID_DRIVER_TB = new System.Windows.Forms.RichTextBox();
+            this.SSN_DRIVER_TB = new System.Windows.Forms.RichTextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel12 = new System.Windows.Forms.Panel();
             this.button30 = new System.Windows.Forms.Button();
@@ -100,27 +91,18 @@
             this.button28 = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AccountGridView = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.button33 = new System.Windows.Forms.Button();
-            this.richTextBox11 = new System.Windows.Forms.RichTextBox();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
+            this.TYPE_ACCOUNT_TB = new System.Windows.Forms.RichTextBox();
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox7 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox8 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox9 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox10 = new System.Windows.Forms.RichTextBox();
+            this.ID_ACCOUNT_TB = new System.Windows.Forms.RichTextBox();
+            this.UserName_ACCOUNT_TB = new System.Windows.Forms.RichTextBox();
+            this.SSN_ACCOUNT_TB = new System.Windows.Forms.RichTextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -133,14 +115,14 @@
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vehicleGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverGridView)).BeginInit();
             this.panel5.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AccountGridView)).BeginInit();
             this.panel9.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -272,12 +254,6 @@
             // employeeGridView
             // 
             this.employeeGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.employeeGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.SSN_EMP,
-            this.EID_EMP,
-            this.DateBegin_EMP,
-            this.EXP_EMP,
-            this.SuperSSN_EMP});
             this.employeeGridView.Location = new System.Drawing.Point(3, 3);
             this.employeeGridView.Name = "employeeGridView";
             this.employeeGridView.RowHeadersWidth = 51;
@@ -285,42 +261,6 @@
             this.employeeGridView.Size = new System.Drawing.Size(677, 200);
             this.employeeGridView.TabIndex = 0;
             this.employeeGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
-            // 
-            // SSN_EMP
-            // 
-            this.SSN_EMP.Frozen = true;
-            this.SSN_EMP.HeaderText = "SSN";
-            this.SSN_EMP.MinimumWidth = 6;
-            this.SSN_EMP.Name = "SSN_EMP";
-            this.SSN_EMP.Width = 125;
-            // 
-            // EID_EMP
-            // 
-            this.EID_EMP.HeaderText = "EID";
-            this.EID_EMP.MinimumWidth = 6;
-            this.EID_EMP.Name = "EID_EMP";
-            this.EID_EMP.Width = 125;
-            // 
-            // DateBegin_EMP
-            // 
-            this.DateBegin_EMP.HeaderText = "DateBegin";
-            this.DateBegin_EMP.MinimumWidth = 6;
-            this.DateBegin_EMP.Name = "DateBegin_EMP";
-            this.DateBegin_EMP.Width = 125;
-            // 
-            // EXP_EMP
-            // 
-            this.EXP_EMP.HeaderText = "EXP";
-            this.EXP_EMP.MinimumWidth = 6;
-            this.EXP_EMP.Name = "EXP_EMP";
-            this.EXP_EMP.Width = 125;
-            // 
-            // SuperSSN_EMP
-            // 
-            this.SuperSSN_EMP.HeaderText = "SuperSSN";
-            this.SuperSSN_EMP.MinimumWidth = 6;
-            this.SuperSSN_EMP.Name = "SuperSSN_EMP";
-            this.SuperSSN_EMP.Width = 125;
             // 
             // panel1
             // 
@@ -330,12 +270,12 @@
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.SSN);
-            this.panel1.Controls.Add(this.SALARY_TEXTBOX);
-            this.panel1.Controls.Add(this.SU_E_TEXTBOX);
-            this.panel1.Controls.Add(this.EXP_TEXTBOX);
-            this.panel1.Controls.Add(this.DATEBEGIN_TEXTBOX);
-            this.panel1.Controls.Add(this.EID_TEXTBOX);
-            this.panel1.Controls.Add(this.SE_TEXTBOX);
+            this.panel1.Controls.Add(this.SALARY_EMP_TB);
+            this.panel1.Controls.Add(this.SSSN_EMP_TB);
+            this.panel1.Controls.Add(this.EXP_EMP_TB);
+            this.panel1.Controls.Add(this.DATEBEGIN_EMP_TB);
+            this.panel1.Controls.Add(this.EID_EMP_TB);
+            this.panel1.Controls.Add(this.SSN_EMP_TB);
             this.panel1.Location = new System.Drawing.Point(6, 21);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(677, 139);
@@ -395,55 +335,56 @@
             this.SSN.Text = "SSN";
             this.SSN.UseVisualStyleBackColor = true;
             // 
-            // SALARY_TEXTBOX
+            // SALARY_EMP_TB
             // 
-            this.SALARY_TEXTBOX.Location = new System.Drawing.Point(465, 103);
-            this.SALARY_TEXTBOX.Name = "SALARY_TEXTBOX";
-            this.SALARY_TEXTBOX.Size = new System.Drawing.Size(183, 26);
-            this.SALARY_TEXTBOX.TabIndex = 6;
-            this.SALARY_TEXTBOX.Text = "";
+            this.SALARY_EMP_TB.Location = new System.Drawing.Point(465, 103);
+            this.SALARY_EMP_TB.Name = "SALARY_EMP_TB";
+            this.SALARY_EMP_TB.Size = new System.Drawing.Size(183, 26);
+            this.SALARY_EMP_TB.TabIndex = 6;
+            this.SALARY_EMP_TB.Text = "";
             // 
-            // SU_E_TEXTBOX
+            // SSSN_EMP_TB
             // 
-            this.SU_E_TEXTBOX.Location = new System.Drawing.Point(465, 58);
-            this.SU_E_TEXTBOX.Name = "SU_E_TEXTBOX";
-            this.SU_E_TEXTBOX.Size = new System.Drawing.Size(183, 27);
-            this.SU_E_TEXTBOX.TabIndex = 5;
-            this.SU_E_TEXTBOX.Text = "";
-            this.SU_E_TEXTBOX.TextChanged += new System.EventHandler(this.richTextBox5_TextChanged);
+            this.SSSN_EMP_TB.Location = new System.Drawing.Point(465, 58);
+            this.SSSN_EMP_TB.Name = "SSSN_EMP_TB";
+            this.SSSN_EMP_TB.Size = new System.Drawing.Size(183, 27);
+            this.SSSN_EMP_TB.TabIndex = 5;
+            this.SSSN_EMP_TB.Text = "";
+            this.SSSN_EMP_TB.TextChanged += new System.EventHandler(this.richTextBox5_TextChanged);
             // 
-            // EXP_TEXTBOX
+            // EXP_EMP_TB
             // 
-            this.EXP_TEXTBOX.Location = new System.Drawing.Point(465, 13);
-            this.EXP_TEXTBOX.Name = "EXP_TEXTBOX";
-            this.EXP_TEXTBOX.Size = new System.Drawing.Size(183, 28);
-            this.EXP_TEXTBOX.TabIndex = 4;
-            this.EXP_TEXTBOX.Text = "";
+            this.EXP_EMP_TB.Location = new System.Drawing.Point(465, 13);
+            this.EXP_EMP_TB.Name = "EXP_EMP_TB";
+            this.EXP_EMP_TB.Size = new System.Drawing.Size(183, 28);
+            this.EXP_EMP_TB.TabIndex = 4;
+            this.EXP_EMP_TB.Text = "";
             // 
-            // DATEBEGIN_TEXTBOX
+            // DATEBEGIN_EMP_TB
             // 
-            this.DATEBEGIN_TEXTBOX.Location = new System.Drawing.Point(146, 103);
-            this.DATEBEGIN_TEXTBOX.Name = "DATEBEGIN_TEXTBOX";
-            this.DATEBEGIN_TEXTBOX.Size = new System.Drawing.Size(174, 26);
-            this.DATEBEGIN_TEXTBOX.TabIndex = 3;
-            this.DATEBEGIN_TEXTBOX.Text = "";
+            this.DATEBEGIN_EMP_TB.Location = new System.Drawing.Point(146, 103);
+            this.DATEBEGIN_EMP_TB.Name = "DATEBEGIN_EMP_TB";
+            this.DATEBEGIN_EMP_TB.Size = new System.Drawing.Size(174, 26);
+            this.DATEBEGIN_EMP_TB.TabIndex = 3;
+            this.DATEBEGIN_EMP_TB.Text = "";
             // 
-            // EID_TEXTBOX
+            // EID_EMP_TB
             // 
-            this.EID_TEXTBOX.Location = new System.Drawing.Point(146, 58);
-            this.EID_TEXTBOX.Name = "EID_TEXTBOX";
-            this.EID_TEXTBOX.Size = new System.Drawing.Size(174, 27);
-            this.EID_TEXTBOX.TabIndex = 2;
-            this.EID_TEXTBOX.Text = "";
-            this.EID_TEXTBOX.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
+            this.EID_EMP_TB.Location = new System.Drawing.Point(146, 58);
+            this.EID_EMP_TB.Name = "EID_EMP_TB";
+            this.EID_EMP_TB.Size = new System.Drawing.Size(174, 27);
+            this.EID_EMP_TB.TabIndex = 2;
+            this.EID_EMP_TB.Text = "";
+            this.EID_EMP_TB.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
             // 
-            // SE_TEXTBOX
+            // SSN_EMP_TB
             // 
-            this.SE_TEXTBOX.Location = new System.Drawing.Point(146, 13);
-            this.SE_TEXTBOX.Name = "SE_TEXTBOX";
-            this.SE_TEXTBOX.Size = new System.Drawing.Size(174, 28);
-            this.SE_TEXTBOX.TabIndex = 1;
-            this.SE_TEXTBOX.Text = "";
+            this.SSN_EMP_TB.Location = new System.Drawing.Point(146, 13);
+            this.SSN_EMP_TB.Name = "SSN_EMP_TB";
+            this.SSN_EMP_TB.Size = new System.Drawing.Size(174, 28);
+            this.SSN_EMP_TB.TabIndex = 1;
+            this.SSN_EMP_TB.Text = "";
+            this.SSN_EMP_TB.TextChanged += new System.EventHandler(this.SSN_EMP_TB_TextChanged);
             // 
             // tabPage2
             // 
@@ -489,6 +430,7 @@
             this.button21.TabIndex = 4;
             this.button21.Text = "Show";
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // panel7
             // 
@@ -531,8 +473,8 @@
             // 
             this.panel6.Controls.Add(this.button22);
             this.panel6.Controls.Add(this.button6);
-            this.panel6.Controls.Add(this.dataGridView3);
-            this.panel6.Controls.Add(this.dataGridView1);
+            this.panel6.Controls.Add(this.vehicleGridView);
+            this.panel6.Controls.Add(this.driverGridView);
             this.panel6.Location = new System.Drawing.Point(9, 183);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(677, 214);
@@ -556,75 +498,25 @@
             this.button6.Text = "Driver";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // dataGridView3
+            // vehicleGridView
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.VNUM_VEHICLE,
-            this.RNUM_VEHICLE,
-            this.VTYPE_DRIVER});
-            this.dataGridView3.Location = new System.Drawing.Point(443, 0);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(231, 211);
-            this.dataGridView3.TabIndex = 1;
+            this.vehicleGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.vehicleGridView.Location = new System.Drawing.Point(443, 0);
+            this.vehicleGridView.Name = "vehicleGridView";
+            this.vehicleGridView.RowHeadersWidth = 51;
+            this.vehicleGridView.RowTemplate.Height = 24;
+            this.vehicleGridView.Size = new System.Drawing.Size(231, 211);
+            this.vehicleGridView.TabIndex = 1;
             // 
-            // VNUM_VEHICLE
+            // driverGridView
             // 
-            this.VNUM_VEHICLE.HeaderText = "VNUM";
-            this.VNUM_VEHICLE.MinimumWidth = 6;
-            this.VNUM_VEHICLE.Name = "VNUM_VEHICLE";
-            this.VNUM_VEHICLE.Width = 125;
-            // 
-            // RNUM_VEHICLE
-            // 
-            this.RNUM_VEHICLE.HeaderText = "RNUM";
-            this.RNUM_VEHICLE.MinimumWidth = 6;
-            this.RNUM_VEHICLE.Name = "RNUM_VEHICLE";
-            this.RNUM_VEHICLE.Width = 125;
-            // 
-            // VTYPE_DRIVER
-            // 
-            this.VTYPE_DRIVER.HeaderText = "VTYPE";
-            this.VTYPE_DRIVER.MinimumWidth = 6;
-            this.VTYPE_DRIVER.Name = "VTYPE_DRIVER";
-            this.VTYPE_DRIVER.Width = 125;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Driver_SSN,
-            this.LI_DRIVER,
-            this.EXP_DRIVER});
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(362, 211);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // Driver_SSN
-            // 
-            this.Driver_SSN.HeaderText = "SSN";
-            this.Driver_SSN.MinimumWidth = 6;
-            this.Driver_SSN.Name = "Driver_SSN";
-            this.Driver_SSN.Width = 125;
-            // 
-            // LI_DRIVER
-            // 
-            this.LI_DRIVER.HeaderText = "Lisence_ID";
-            this.LI_DRIVER.MinimumWidth = 6;
-            this.LI_DRIVER.Name = "LI_DRIVER";
-            this.LI_DRIVER.Width = 125;
-            // 
-            // EXP_DRIVER
-            // 
-            this.EXP_DRIVER.HeaderText = "EXP";
-            this.EXP_DRIVER.MinimumWidth = 6;
-            this.EXP_DRIVER.Name = "EXP_DRIVER";
-            this.EXP_DRIVER.Width = 125;
+            this.driverGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.driverGridView.Location = new System.Drawing.Point(0, 0);
+            this.driverGridView.Name = "driverGridView";
+            this.driverGridView.RowHeadersWidth = 51;
+            this.driverGridView.RowTemplate.Height = 24;
+            this.driverGridView.Size = new System.Drawing.Size(362, 211);
+            this.driverGridView.TabIndex = 0;
             // 
             // label4
             // 
@@ -649,38 +541,66 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.TYPE_DRIVER_TB);
+            this.panel5.Controls.Add(this.button23);
             this.panel5.Controls.Add(this.button12);
+            this.panel5.Controls.Add(this.RNUM_DRIVER_TB);
             this.panel5.Controls.Add(this.button13);
             this.panel5.Controls.Add(this.button14);
             this.panel5.Controls.Add(this.button15);
             this.panel5.Controls.Add(this.button16);
-            this.panel5.Controls.Add(this.richTextBox2);
-            this.panel5.Controls.Add(this.richTextBox3);
-            this.panel5.Controls.Add(this.richTextBox4);
-            this.panel5.Controls.Add(this.richTextBox5);
-            this.panel5.Controls.Add(this.richTextBox6);
+            this.panel5.Controls.Add(this.Vnum_Driver_TB);
+            this.panel5.Controls.Add(this.exp_DRIVER_TB);
+            this.panel5.Controls.Add(this.LisenceID_DRIVER_TB);
+            this.panel5.Controls.Add(this.SSN_DRIVER_TB);
             this.panel5.Location = new System.Drawing.Point(6, 22);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(677, 139);
             this.panel5.TabIndex = 9;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
+            // TYPE_DRIVER_TB
+            // 
+            this.TYPE_DRIVER_TB.Location = new System.Drawing.Point(463, 101);
+            this.TYPE_DRIVER_TB.Name = "TYPE_DRIVER_TB";
+            this.TYPE_DRIVER_TB.Size = new System.Drawing.Size(183, 27);
+            this.TYPE_DRIVER_TB.TabIndex = 16;
+            this.TYPE_DRIVER_TB.Text = "";
+            // 
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(341, 100);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(107, 28);
+            this.button23.TabIndex = 15;
+            this.button23.Text = "Type";
+            this.button23.UseVisualStyleBackColor = true;
+            // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(341, 58);
+            this.button12.Location = new System.Drawing.Point(341, 57);
             this.button12.Name = "button12";
+            this.button12.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button12.Size = new System.Drawing.Size(107, 28);
-            this.button12.TabIndex = 11;
-            this.button12.Text = "Salary";
+            this.button12.TabIndex = 14;
+            this.button12.Text = "Rnum";
             this.button12.UseVisualStyleBackColor = true;
+            // 
+            // RNUM_DRIVER_TB
+            // 
+            this.RNUM_DRIVER_TB.Location = new System.Drawing.Point(463, 58);
+            this.RNUM_DRIVER_TB.Name = "RNUM_DRIVER_TB";
+            this.RNUM_DRIVER_TB.Size = new System.Drawing.Size(183, 27);
+            this.RNUM_DRIVER_TB.TabIndex = 13;
+            this.RNUM_DRIVER_TB.Text = "";
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(341, 13);
+            this.button13.Location = new System.Drawing.Point(341, 10);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(107, 28);
-            this.button13.TabIndex = 10;
-            this.button13.Text = "Vehicle";
+            this.button13.TabIndex = 12;
+            this.button13.Text = "Vnum";
             this.button13.UseVisualStyleBackColor = true;
             // 
             // button14
@@ -710,45 +630,38 @@
             this.button16.Text = "SSN";
             this.button16.UseVisualStyleBackColor = true;
             // 
-            // richTextBox2
+            // Vnum_Driver_TB
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(465, 58);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(183, 27);
-            this.richTextBox2.TabIndex = 5;
-            this.richTextBox2.Text = "";
+            this.Vnum_Driver_TB.Location = new System.Drawing.Point(463, 11);
+            this.Vnum_Driver_TB.Name = "Vnum_Driver_TB";
+            this.Vnum_Driver_TB.Size = new System.Drawing.Size(183, 27);
+            this.Vnum_Driver_TB.TabIndex = 5;
+            this.Vnum_Driver_TB.Text = "";
             // 
-            // richTextBox3
+            // exp_DRIVER_TB
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(465, 13);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(183, 28);
-            this.richTextBox3.TabIndex = 4;
-            this.richTextBox3.Text = "";
+            this.exp_DRIVER_TB.Location = new System.Drawing.Point(146, 103);
+            this.exp_DRIVER_TB.Name = "exp_DRIVER_TB";
+            this.exp_DRIVER_TB.Size = new System.Drawing.Size(174, 26);
+            this.exp_DRIVER_TB.TabIndex = 3;
+            this.exp_DRIVER_TB.Text = "";
             // 
-            // richTextBox4
+            // LisenceID_DRIVER_TB
             // 
-            this.richTextBox4.Location = new System.Drawing.Point(146, 103);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(174, 26);
-            this.richTextBox4.TabIndex = 3;
-            this.richTextBox4.Text = "";
+            this.LisenceID_DRIVER_TB.Location = new System.Drawing.Point(146, 58);
+            this.LisenceID_DRIVER_TB.Name = "LisenceID_DRIVER_TB";
+            this.LisenceID_DRIVER_TB.Size = new System.Drawing.Size(174, 27);
+            this.LisenceID_DRIVER_TB.TabIndex = 2;
+            this.LisenceID_DRIVER_TB.Text = "";
             // 
-            // richTextBox5
+            // SSN_DRIVER_TB
             // 
-            this.richTextBox5.Location = new System.Drawing.Point(146, 58);
-            this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.Size = new System.Drawing.Size(174, 27);
-            this.richTextBox5.TabIndex = 2;
-            this.richTextBox5.Text = "";
-            // 
-            // richTextBox6
-            // 
-            this.richTextBox6.Location = new System.Drawing.Point(146, 13);
-            this.richTextBox6.Name = "richTextBox6";
-            this.richTextBox6.Size = new System.Drawing.Size(174, 28);
-            this.richTextBox6.TabIndex = 1;
-            this.richTextBox6.Text = "";
+            this.SSN_DRIVER_TB.Location = new System.Drawing.Point(146, 13);
+            this.SSN_DRIVER_TB.Name = "SSN_DRIVER_TB";
+            this.SSN_DRIVER_TB.Size = new System.Drawing.Size(174, 28);
+            this.SSN_DRIVER_TB.TabIndex = 1;
+            this.SSN_DRIVER_TB.Text = "";
+            this.SSN_DRIVER_TB.TextChanged += new System.EventHandler(this.SSN_DRIVER_TB_TextChanged);
             // 
             // tabPage3
             // 
@@ -829,72 +742,31 @@
             this.button29.TabIndex = 4;
             this.button29.Text = "Show";
             this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.button29_Click);
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.dataGridView4);
-            this.panel10.Location = new System.Drawing.Point(10, 190);
+            this.panel10.Controls.Add(this.AccountGridView);
+            this.panel10.Location = new System.Drawing.Point(10, 158);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(677, 207);
+            this.panel10.Size = new System.Drawing.Size(677, 239);
             this.panel10.TabIndex = 14;
             // 
-            // dataGridView4
+            // AccountGridView
             // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5});
-            this.dataGridView4.Location = new System.Drawing.Point(0, 11);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.RowHeadersWidth = 51;
-            this.dataGridView4.RowTemplate.Height = 24;
-            this.dataGridView4.Size = new System.Drawing.Size(677, 193);
-            this.dataGridView4.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.Frozen = true;
-            this.dataGridViewTextBoxColumn1.HeaderText = "SSN";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "EID";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "DateBegin";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "EXP";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "SuperSSN";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 125;
+            this.AccountGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.AccountGridView.Location = new System.Drawing.Point(0, -8);
+            this.AccountGridView.Name = "AccountGridView";
+            this.AccountGridView.RowHeadersWidth = 51;
+            this.AccountGridView.RowTemplate.Height = 24;
+            this.AccountGridView.Size = new System.Drawing.Size(677, 244);
+            this.AccountGridView.TabIndex = 0;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(3, 161);
+            this.label6.Location = new System.Drawing.Point(3, 139);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(45, 16);
             this.label6.TabIndex = 13;
@@ -914,65 +786,44 @@
             // panel9
             // 
             this.panel9.Controls.Add(this.button33);
-            this.panel9.Controls.Add(this.richTextBox11);
-            this.panel9.Controls.Add(this.button23);
-            this.panel9.Controls.Add(this.button24);
+            this.panel9.Controls.Add(this.TYPE_ACCOUNT_TB);
             this.panel9.Controls.Add(this.button25);
             this.panel9.Controls.Add(this.button26);
             this.panel9.Controls.Add(this.button27);
-            this.panel9.Controls.Add(this.richTextBox1);
-            this.panel9.Controls.Add(this.richTextBox7);
-            this.panel9.Controls.Add(this.richTextBox8);
-            this.panel9.Controls.Add(this.richTextBox9);
-            this.panel9.Controls.Add(this.richTextBox10);
+            this.panel9.Controls.Add(this.ID_ACCOUNT_TB);
+            this.panel9.Controls.Add(this.UserName_ACCOUNT_TB);
+            this.panel9.Controls.Add(this.SSN_ACCOUNT_TB);
             this.panel9.Location = new System.Drawing.Point(6, 19);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(677, 139);
+            this.panel9.Size = new System.Drawing.Size(677, 107);
             this.panel9.TabIndex = 10;
             // 
             // button33
             // 
-            this.button33.Location = new System.Drawing.Point(341, 100);
+            this.button33.Location = new System.Drawing.Point(341, 54);
             this.button33.Name = "button33";
             this.button33.Size = new System.Drawing.Size(107, 29);
             this.button33.TabIndex = 13;
             this.button33.Text = "TYPE";
             this.button33.UseVisualStyleBackColor = true;
             // 
-            // richTextBox11
+            // TYPE_ACCOUNT_TB
             // 
-            this.richTextBox11.Location = new System.Drawing.Point(465, 100);
-            this.richTextBox11.Name = "richTextBox11";
-            this.richTextBox11.Size = new System.Drawing.Size(183, 27);
-            this.richTextBox11.TabIndex = 12;
-            this.richTextBox11.Text = "";
-            // 
-            // button23
-            // 
-            this.button23.Location = new System.Drawing.Point(341, 58);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(107, 28);
-            this.button23.TabIndex = 11;
-            this.button23.Text = "MAIL";
-            this.button23.UseVisualStyleBackColor = true;
-            // 
-            // button24
-            // 
-            this.button24.Location = new System.Drawing.Point(341, 13);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(107, 28);
-            this.button24.TabIndex = 10;
-            this.button24.Text = "PHONE";
-            this.button24.UseVisualStyleBackColor = true;
+            this.TYPE_ACCOUNT_TB.Location = new System.Drawing.Point(465, 58);
+            this.TYPE_ACCOUNT_TB.Name = "TYPE_ACCOUNT_TB";
+            this.TYPE_ACCOUNT_TB.Size = new System.Drawing.Size(174, 27);
+            this.TYPE_ACCOUNT_TB.TabIndex = 12;
+            this.TYPE_ACCOUNT_TB.Text = "";
             // 
             // button25
             // 
-            this.button25.Location = new System.Drawing.Point(23, 100);
+            this.button25.Location = new System.Drawing.Point(341, 13);
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(107, 28);
             this.button25.TabIndex = 9;
-            this.button25.Text = "NAME";
+            this.button25.Text = "ID";
             this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // button26
             // 
@@ -992,45 +843,29 @@
             this.button27.Text = "SSN";
             this.button27.UseVisualStyleBackColor = true;
             // 
-            // richTextBox1
+            // ID_ACCOUNT_TB
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(465, 58);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(183, 27);
-            this.richTextBox1.TabIndex = 5;
-            this.richTextBox1.Text = "";
+            this.ID_ACCOUNT_TB.Location = new System.Drawing.Point(465, 16);
+            this.ID_ACCOUNT_TB.Name = "ID_ACCOUNT_TB";
+            this.ID_ACCOUNT_TB.Size = new System.Drawing.Size(174, 26);
+            this.ID_ACCOUNT_TB.TabIndex = 3;
+            this.ID_ACCOUNT_TB.Text = "";
             // 
-            // richTextBox7
+            // UserName_ACCOUNT_TB
             // 
-            this.richTextBox7.Location = new System.Drawing.Point(465, 13);
-            this.richTextBox7.Name = "richTextBox7";
-            this.richTextBox7.Size = new System.Drawing.Size(183, 28);
-            this.richTextBox7.TabIndex = 4;
-            this.richTextBox7.Text = "";
+            this.UserName_ACCOUNT_TB.Location = new System.Drawing.Point(146, 58);
+            this.UserName_ACCOUNT_TB.Name = "UserName_ACCOUNT_TB";
+            this.UserName_ACCOUNT_TB.Size = new System.Drawing.Size(174, 27);
+            this.UserName_ACCOUNT_TB.TabIndex = 2;
+            this.UserName_ACCOUNT_TB.Text = "";
             // 
-            // richTextBox8
+            // SSN_ACCOUNT_TB
             // 
-            this.richTextBox8.Location = new System.Drawing.Point(146, 103);
-            this.richTextBox8.Name = "richTextBox8";
-            this.richTextBox8.Size = new System.Drawing.Size(174, 26);
-            this.richTextBox8.TabIndex = 3;
-            this.richTextBox8.Text = "";
-            // 
-            // richTextBox9
-            // 
-            this.richTextBox9.Location = new System.Drawing.Point(146, 58);
-            this.richTextBox9.Name = "richTextBox9";
-            this.richTextBox9.Size = new System.Drawing.Size(174, 27);
-            this.richTextBox9.TabIndex = 2;
-            this.richTextBox9.Text = "";
-            // 
-            // richTextBox10
-            // 
-            this.richTextBox10.Location = new System.Drawing.Point(146, 13);
-            this.richTextBox10.Name = "richTextBox10";
-            this.richTextBox10.Size = new System.Drawing.Size(174, 28);
-            this.richTextBox10.TabIndex = 1;
-            this.richTextBox10.Text = "";
+            this.SSN_ACCOUNT_TB.Location = new System.Drawing.Point(146, 13);
+            this.SSN_ACCOUNT_TB.Name = "SSN_ACCOUNT_TB";
+            this.SSN_ACCOUNT_TB.Size = new System.Drawing.Size(174, 28);
+            this.SSN_ACCOUNT_TB.TabIndex = 1;
+            this.SSN_ACCOUNT_TB.Text = "";
             // 
             // fAdmin
             // 
@@ -1055,15 +890,15 @@
             this.panel8.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vehicleGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverGridView)).EndInit();
             this.panel5.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AccountGridView)).EndInit();
             this.panel9.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -1080,11 +915,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.DataGridView employeeGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SSN_EMP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EID_EMP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DateBegin_EMP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EXP_EMP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SuperSSN_EMP;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
@@ -1092,12 +922,12 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox SALARY_TEXTBOX;
-        private System.Windows.Forms.RichTextBox SU_E_TEXTBOX;
-        private System.Windows.Forms.RichTextBox EXP_TEXTBOX;
-        private System.Windows.Forms.RichTextBox DATEBEGIN_TEXTBOX;
-        private System.Windows.Forms.RichTextBox EID_TEXTBOX;
-        private System.Windows.Forms.RichTextBox SE_TEXTBOX;
+        private System.Windows.Forms.RichTextBox SALARY_EMP_TB;
+        private System.Windows.Forms.RichTextBox SSSN_EMP_TB;
+        private System.Windows.Forms.RichTextBox EXP_EMP_TB;
+        private System.Windows.Forms.RichTextBox DATEBEGIN_EMP_TB;
+        private System.Windows.Forms.RichTextBox EID_EMP_TB;
+        private System.Windows.Forms.RichTextBox SSN_EMP_TB;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
@@ -1116,46 +946,28 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.RichTextBox richTextBox3;
-        private System.Windows.Forms.RichTextBox richTextBox4;
-        private System.Windows.Forms.RichTextBox richTextBox5;
-        private System.Windows.Forms.RichTextBox richTextBox6;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.RichTextBox Vnum_Driver_TB;
+        private System.Windows.Forms.RichTextBox exp_DRIVER_TB;
+        private System.Windows.Forms.RichTextBox LisenceID_DRIVER_TB;
+        private System.Windows.Forms.RichTextBox SSN_DRIVER_TB;
+        private System.Windows.Forms.DataGridView vehicleGridView;
+        private System.Windows.Forms.DataGridView driverGridView;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn VNUM_VEHICLE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RNUM_VEHICLE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn VTYPE_DRIVER;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Driver_SSN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LI_DRIVER;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EXP_DRIVER;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox7;
-        private System.Windows.Forms.RichTextBox richTextBox8;
-        private System.Windows.Forms.RichTextBox richTextBox9;
-        private System.Windows.Forms.RichTextBox richTextBox10;
+        private System.Windows.Forms.RichTextBox ID_ACCOUNT_TB;
+        private System.Windows.Forms.RichTextBox UserName_ACCOUNT_TB;
+        private System.Windows.Forms.RichTextBox SSN_ACCOUNT_TB;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.DataGridView dataGridView4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridView AccountGridView;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Button button29;
@@ -1164,6 +976,11 @@
         private System.Windows.Forms.Button button31;
         private System.Windows.Forms.Button button32;
         private System.Windows.Forms.Button button33;
-        private System.Windows.Forms.RichTextBox richTextBox11;
+        private System.Windows.Forms.RichTextBox TYPE_ACCOUNT_TB;
+        private System.Windows.Forms.RichTextBox TYPE_DRIVER_TB;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.RichTextBox RNUM_DRIVER_TB;
+        private System.Windows.Forms.Button button13;
     }
 }

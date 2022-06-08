@@ -34,5 +34,11 @@ namespace WindowsFormsApp1.DAO
             DataTable data = DataProvider.Instance.ExecuteQuery("SELECT dbo.GET_SALARY_EMPLOYEE('" + ssn +"') AS SALARY");
             return data.Rows[0]["SALARY"].ToString();
         }
+
+        public DataTable getEmployeeTable()
+        {
+            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT * FROM EMPLOYEE");
+            return data;
+        }
     }
 }

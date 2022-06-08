@@ -95,6 +95,17 @@ namespace WindowsFormsApp1.DAO
             return dt.Rows.Count > 0;
         }
 
+        public DataTable getPhonePerson(string ssn)
+        {
+            return DataProvider.Instance.ExecuteQuery("SELECT PHONE FROM PERSON_PHONE WHERE SSN = '" + ssn + "'");
+        }
+
+        public DataTable getMailPerson(string ssn)
+        {
+            return DataProvider.Instance.ExecuteQuery("SELECT MAIL FROM PERSON_MAIL WHERE SSN = '" + ssn + "'");
+        }
+
+
         
         public string get_address(string ssn_cr)
         {

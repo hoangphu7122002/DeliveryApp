@@ -291,5 +291,10 @@ namespace WindowsFormsApp1
                 }
             }
         }
+
+        private void LOC_TO_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

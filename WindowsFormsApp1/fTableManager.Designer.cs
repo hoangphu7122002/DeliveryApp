@@ -44,6 +44,8 @@
             this.Location = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBoxAdmin = new System.Windows.Forms.RichTextBox();
             this.deleteAdminButton = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.PRICE = new System.Windows.Forms.RichTextBox();
@@ -59,8 +61,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
             this.flipTable = new System.Windows.Forms.FlowLayoutPanel();
-            this.textBoxAdmin = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -189,6 +189,24 @@
             this.panel4.Size = new System.Drawing.Size(446, 48);
             this.panel4.TabIndex = 3;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 8);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 32);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "CLOSE";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // textBoxAdmin
+            // 
+            this.textBoxAdmin.Location = new System.Drawing.Point(218, 8);
+            this.textBoxAdmin.Name = "textBoxAdmin";
+            this.textBoxAdmin.Size = new System.Drawing.Size(216, 29);
+            this.textBoxAdmin.TabIndex = 7;
+            this.textBoxAdmin.Text = "";
+            // 
             // deleteAdminButton
             // 
             this.deleteAdminButton.Location = new System.Drawing.Point(119, 8);
@@ -247,6 +265,7 @@
             this.LOC_TO.Size = new System.Drawing.Size(109, 26);
             this.LOC_TO.TabIndex = 10;
             this.LOC_TO.Text = "";
+            this.LOC_TO.TextChanged += new System.EventHandler(this.LOC_TO_TextChanged);
             // 
             // label4
             // 
@@ -348,24 +367,6 @@
             this.flipTable.Size = new System.Drawing.Size(479, 502);
             this.flipTable.TabIndex = 5;
             this.flipTable.Paint += new System.Windows.Forms.PaintEventHandler(this.flipTable_Paint);
-            // 
-            // textBoxAdmin
-            // 
-            this.textBoxAdmin.Location = new System.Drawing.Point(218, 8);
-            this.textBoxAdmin.Name = "textBoxAdmin";
-            this.textBoxAdmin.Size = new System.Drawing.Size(216, 29);
-            this.textBoxAdmin.TabIndex = 7;
-            this.textBoxAdmin.Text = "";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(12, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 32);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "CLOSE";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // fTableManager
             // 

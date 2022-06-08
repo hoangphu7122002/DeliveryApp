@@ -30,5 +30,10 @@ namespace WindowsFormsApp1.DAO
             DataTable data = DataProvider.Instance.ExecuteQuery("SELECT VNUM FROM DRIVES ='" + driverSSN + "'");
             return data;
         }
+
+        public DataTable getVehicleTable()
+        {
+            return DataProvider.Instance.ExecuteQuery("SELECT * FROM VEHICLE");
+        }
     }
 }

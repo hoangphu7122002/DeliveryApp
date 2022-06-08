@@ -14,12 +14,12 @@ namespace WindowsFormsApp1.DAO
 
         public static AccountDAO Instance
         {
-            get { 
+            get {
                 if (instance == null)
                 {
                     instance = new AccountDAO();
                 }
-                return instance; 
+                return instance;
             }
             private set { instance = value; }
         }
@@ -27,7 +27,12 @@ namespace WindowsFormsApp1.DAO
         private AccountDAO()
         {
 
-        }   
+        }
+
+        public DataTable getAccountTable()
+        {
+            return DataProvider.Instance.ExecuteQuery("SELECT * FROM ACCOUNT");
+        }
 
         public bool Login(string username, string password)
         {

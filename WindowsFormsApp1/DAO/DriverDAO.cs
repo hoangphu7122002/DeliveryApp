@@ -34,5 +34,10 @@ namespace WindowsFormsApp1.DAO
             DataTable data = DataProvider.Instance.ExecuteQuery("SELECT dbo.GET_SALARY_DRIVER('" + ssnDriver + "') AS SALARY)");
             return data.Rows[0]["SALARY"].ToString();
         }
+
+        public DataTable getDriverTable()
+        {
+            return DataProvider.Instance.ExecuteQuery("SELECT * FROM DRIVER");
+        }
     }
 }
