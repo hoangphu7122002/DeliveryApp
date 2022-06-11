@@ -35,5 +35,10 @@ namespace WindowsFormsApp1.DAO
         {
             return DataProvider.Instance.ExecuteQuery("SELECT * FROM VEHICLE");
         }
+
+        public bool deleteVehicle(string vnum)
+        {
+            return DataProvider.Instance.ExecuteNonQuery(string.Format("DELETE FROM VEHICLE WHERE VNUM = '{0}'", vnum)) > 0;
+        }
     }
 }

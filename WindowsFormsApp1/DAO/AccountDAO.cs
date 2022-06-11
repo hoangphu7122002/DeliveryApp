@@ -72,5 +72,27 @@ namespace WindowsFormsApp1.DAO
             }
             return null;
         }
+
+        public string getIDBySSN(string ssn)
+        {
+            DataTable data = DataProvider.Instance.ExecuteQuery(string.Format("SELECT ID FROM ACCOUNT WHERE SSN = '{0}'",ssn));
+            return data.Rows[0]["ID"].ToString();
+        }
+
+        public bool checkINDB(string id)
+        {
+            DataTable data = DataProvider.Instance.ExecuteQuery(string.Format("SELECT * FROM ACCOUNT WHERE ID = '{0}'", id));
+            return data.Rows.Count > 0;
+        }
+
+        public bool UpdateAccount(string ssn, string id, string type)
+        {
+            return DataProvider.Instance.ExecuteNonQuery(string.Format("UPDATE ACCOUNT SET ID = '{0}', ATYPE = '{1}' WHERE SSN = '{2}'", id, type, ssn)) > 0;
+        }
+
+        public bool deleteAccount(string ssn)
+        {
+            return DataProvider.Instance.ExecuteNonQuery(string.Format("DELETE FROM ACCOUNT WHERE SSN = '{0}'",ssn)) > 0;
+        }
     }
 }

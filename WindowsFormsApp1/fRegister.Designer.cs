@@ -795,6 +795,7 @@
             this.SSNTextbox.Name = "SSNTextbox";
             this.SSNTextbox.Size = new System.Drawing.Size(114, 22);
             this.SSNTextbox.TabIndex = 1;
+            this.SSNTextbox.TextChanged += new System.EventHandler(this.SSNTextbox_TextChanged);
             // 
             // label11
             // 

@@ -202,7 +202,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(87, 68);
             this.button4.TabIndex = 4;
-            this.button4.Text = "Show";
+            this.button4.Text = "Reload";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -224,6 +224,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -233,6 +234,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -428,7 +430,7 @@
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(87, 68);
             this.button21.TabIndex = 4;
-            this.button21.Text = "Show";
+            this.button21.Text = "Reload";
             this.button21.UseVisualStyleBackColor = true;
             this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
@@ -450,6 +452,7 @@
             this.button17.TabIndex = 3;
             this.button17.Text = "Delete";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button18
             // 
@@ -459,6 +462,7 @@
             this.button18.TabIndex = 2;
             this.button18.Text = "Update";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button19
             // 
@@ -696,6 +700,7 @@
             this.button30.TabIndex = 3;
             this.button30.Text = "Delete";
             this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
             // button31
             // 
@@ -705,6 +710,7 @@
             this.button31.TabIndex = 2;
             this.button31.Text = "Update";
             this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.button31_Click);
             // 
             // button32
             // 
@@ -740,7 +746,7 @@
             this.button29.Name = "button29";
             this.button29.Size = new System.Drawing.Size(87, 68);
             this.button29.TabIndex = 4;
-            this.button29.Text = "Show";
+            this.button29.Text = "Reload";
             this.button29.UseVisualStyleBackColor = true;
             this.button29.Click += new System.EventHandler(this.button29_Click);
             // 

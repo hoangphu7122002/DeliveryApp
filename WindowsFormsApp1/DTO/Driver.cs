@@ -31,6 +31,13 @@ namespace WindowsFormsApp1.DTO
         public List<Vehicle> Vehicles { get => vehicles; set => vehicles = value; }
         public string Salary { get => salary; set => salary = value; }
 
+        public Driver(string ssn,string lisenceID,byte exp)
+        {
+            Ssn = ssn;
+            LisenceID = lisenceID;
+            Exp = exp;
+        }
+
         public Driver(DataRow data)
         {
             Ssn = data["SSN"].ToString();

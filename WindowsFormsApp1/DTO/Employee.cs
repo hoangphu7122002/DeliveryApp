@@ -24,7 +24,7 @@ namespace WindowsFormsApp1.DTO
         public string SuperSSN { get => superSSN; set => superSSN = value; }
         public string Salary { get => salary; set => salary = value; }
 
-        public Employee(string ssn, string eID, string dataBegin, byte eXP, string superSSN, string salary)
+        public Employee(string ssn, string eID, string dataBegin, byte eXP, string superSSN, string salary = "")
         {
             Ssn = ssn;
             EID = eID;

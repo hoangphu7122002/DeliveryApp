@@ -73,7 +73,7 @@ namespace WindowsFormsApp1
                 return false;
             }
             Regex r = new Regex(@"^[0-9]{9}");
-            var result = r.Match("191973998");
+            var result = r.Match(ssn);
             return result.Success;
         }
 
@@ -216,6 +216,11 @@ namespace WindowsFormsApp1
         }
 
         private void textBox24_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SSNTextbox_TextChanged(object sender, EventArgs e)
         {
 
         }
