@@ -538,5 +538,32 @@ namespace WindowsFormsApp1
                 MessageBox.Show("ERROR IN PROCESSING!!");
             }
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void FILTER_SV_Click(object sender, EventArgs e)
+        {
+            string service = comboBoxSVI.Text.Trim();
+
+            DataTable data = DataProvider.Instance.ExecuteQuery("EXEC LIST_ABOUT_SERVICE @service ", new object[] {service});
+            service_data_gridview.DataSource = data;
+        }
+
+        private void button36_Click(object sender, EventArgs e)
+        {
+            string type = comboBox2.Text.Trim();
+            if (richTextBox1.Text.Trim() == "")
+            {
+                return;
+            }
+            int num_phone = richTextBox1.Text.Trim()[0] - 48;
+
+
+            DataTable data = DataProvider.Instance.ExecuteQuery("EXEC NUMPHONE_ACCOUNT @type , @num_phone ", new object[] { type, num_phone });
+            account_data_gridview.DataSource = data;
+        }
     }
 }

@@ -61,6 +61,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
             this.flipTable = new System.Windows.Forms.FlowLayoutPanel();
+            this.driverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.employeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -72,7 +74,9 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.adminToolStripMenuItem,
-            this.accountToolStripMenuItem});
+            this.accountToolStripMenuItem,
+            this.driverToolStripMenuItem,
+            this.employeeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(946, 28);
@@ -368,6 +372,20 @@
             this.flipTable.TabIndex = 5;
             this.flipTable.Paint += new System.Windows.Forms.PaintEventHandler(this.flipTable_Paint);
             // 
+            // driverToolStripMenuItem
+            // 
+            this.driverToolStripMenuItem.Name = "driverToolStripMenuItem";
+            this.driverToolStripMenuItem.Size = new System.Drawing.Size(63, 24);
+            this.driverToolStripMenuItem.Text = "Driver";
+            this.driverToolStripMenuItem.Click += new System.EventHandler(this.driverToolStripMenuItem_Click);
+            // 
+            // employeeToolStripMenuItem
+            // 
+            this.employeeToolStripMenuItem.Name = "employeeToolStripMenuItem";
+            this.employeeToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
+            this.employeeToolStripMenuItem.Text = "Employee";
+            this.employeeToolStripMenuItem.Click += new System.EventHandler(this.employeeToolStripMenuItem_Click);
+            // 
             // fTableManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -428,5 +446,7 @@
         private System.Windows.Forms.Button deleteAdminButton;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RichTextBox textBoxAdmin;
+        private System.Windows.Forms.ToolStripMenuItem driverToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem employeeToolStripMenuItem;
     }
 }

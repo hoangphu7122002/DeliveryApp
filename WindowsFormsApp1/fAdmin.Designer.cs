@@ -103,6 +103,21 @@
             this.ID_ACCOUNT_TB = new System.Windows.Forms.RichTextBox();
             this.UserName_ACCOUNT_TB = new System.Windows.Forms.RichTextBox();
             this.SSN_ACCOUNT_TB = new System.Windows.Forms.RichTextBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.button36 = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.button35 = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.button34 = new System.Windows.Forms.Button();
+            this.account_data_gridview = new System.Windows.Forms.DataGridView();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.comboBoxSVI = new System.Windows.Forms.ComboBox();
+            this.button24 = new System.Windows.Forms.Button();
+            this.FILTER_SV = new System.Windows.Forms.Button();
+            this.service_data_gridview = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -124,6 +139,11 @@
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AccountGridView)).BeginInit();
             this.panel9.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.account_data_gridview)).BeginInit();
+            this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.service_data_gridview)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -131,6 +151,7 @@
             this.tabControl.Controls.Add(this.tabPage1);
             this.tabControl.Controls.Add(this.tabPage2);
             this.tabControl.Controls.Add(this.tabPage3);
+            this.tabControl.Controls.Add(this.tabPage4);
             this.tabControl.ImeMode = System.Windows.Forms.ImeMode.On;
             this.tabControl.Location = new System.Drawing.Point(12, 12);
             this.tabControl.Name = "tabControl";
@@ -873,6 +894,167 @@
             this.SSN_ACCOUNT_TB.TabIndex = 1;
             this.SSN_ACCOUNT_TB.Text = "";
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.panel14);
+            this.tabPage4.Controls.Add(this.panel13);
+            this.tabPage4.Controls.Add(this.label8);
+            this.tabPage4.Controls.Add(this.label7);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(696, 477);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Statistics";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.button36);
+            this.panel14.Controls.Add(this.richTextBox1);
+            this.panel14.Controls.Add(this.button35);
+            this.panel14.Controls.Add(this.comboBox2);
+            this.panel14.Controls.Add(this.button34);
+            this.panel14.Controls.Add(this.account_data_gridview);
+            this.panel14.Location = new System.Drawing.Point(9, 265);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(665, 199);
+            this.panel14.TabIndex = 16;
+            // 
+            // button36
+            // 
+            this.button36.Location = new System.Drawing.Point(482, 15);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(89, 24);
+            this.button36.TabIndex = 4;
+            this.button36.Text = "FILTER";
+            this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(389, 16);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(87, 24);
+            this.richTextBox1.TabIndex = 6;
+            this.richTextBox1.Text = "";
+            // 
+            // button35
+            // 
+            this.button35.Location = new System.Drawing.Point(293, 16);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(90, 24);
+            this.button35.TabIndex = 5;
+            this.button35.Text = "NUM";
+            this.button35.UseVisualStyleBackColor = true;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "CUSTOMER",
+            "ADMIN",
+            "EMPLOYEE",
+            "DRIVER"});
+            this.comboBox2.Location = new System.Drawing.Point(98, 16);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(189, 24);
+            this.comboBox2.TabIndex = 4;
+            // 
+            // button34
+            // 
+            this.button34.Location = new System.Drawing.Point(3, 16);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(89, 24);
+            this.button34.TabIndex = 4;
+            this.button34.Text = "ATYPE_NAME";
+            this.button34.UseVisualStyleBackColor = true;
+            // 
+            // account_data_gridview
+            // 
+            this.account_data_gridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.account_data_gridview.Location = new System.Drawing.Point(3, 46);
+            this.account_data_gridview.Name = "account_data_gridview";
+            this.account_data_gridview.RowHeadersWidth = 51;
+            this.account_data_gridview.RowTemplate.Height = 24;
+            this.account_data_gridview.Size = new System.Drawing.Size(659, 150);
+            this.account_data_gridview.TabIndex = 1;
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.comboBoxSVI);
+            this.panel13.Controls.Add(this.button24);
+            this.panel13.Controls.Add(this.FILTER_SV);
+            this.panel13.Controls.Add(this.service_data_gridview);
+            this.panel13.Location = new System.Drawing.Point(9, 34);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(665, 199);
+            this.panel13.TabIndex = 15;
+            // 
+            // comboBoxSVI
+            // 
+            this.comboBoxSVI.FormattingEnabled = true;
+            this.comboBoxSVI.Items.AddRange(new object[] {
+            "NORMAL",
+            "DISCOUNT",
+            "EXPRESS"});
+            this.comboBoxSVI.Location = new System.Drawing.Point(98, 12);
+            this.comboBoxSVI.Name = "comboBoxSVI";
+            this.comboBoxSVI.Size = new System.Drawing.Size(189, 24);
+            this.comboBoxSVI.TabIndex = 3;
+            // 
+            // button24
+            // 
+            this.button24.Location = new System.Drawing.Point(3, 12);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(89, 24);
+            this.button24.TabIndex = 2;
+            this.button24.Text = "SERVICE_NAME";
+            this.button24.UseVisualStyleBackColor = true;
+            // 
+            // FILTER_SV
+            // 
+            this.FILTER_SV.Location = new System.Drawing.Point(293, 12);
+            this.FILTER_SV.Name = "FILTER_SV";
+            this.FILTER_SV.Size = new System.Drawing.Size(90, 24);
+            this.FILTER_SV.TabIndex = 1;
+            this.FILTER_SV.Text = "FILTER";
+            this.FILTER_SV.UseVisualStyleBackColor = true;
+            this.FILTER_SV.Click += new System.EventHandler(this.FILTER_SV_Click);
+            // 
+            // service_data_gridview
+            // 
+            this.service_data_gridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.service_data_gridview.Location = new System.Drawing.Point(3, 46);
+            this.service_data_gridview.Name = "service_data_gridview";
+            this.service_data_gridview.RowHeadersWidth = 51;
+            this.service_data_gridview.RowTemplate.Height = 24;
+            this.service_data_gridview.Size = new System.Drawing.Size(659, 150);
+            this.service_data_gridview.TabIndex = 0;
+            this.service_data_gridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(6, 246);
+            this.label8.Name = "label8";
+            this.label8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label8.Size = new System.Drawing.Size(123, 16);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "ACCOUNT_INFO";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(3, 15);
+            this.label7.Name = "label7";
+            this.label7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label7.Size = new System.Drawing.Size(115, 16);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "SERVICE_INFO";
+            // 
             // fAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -906,6 +1088,12 @@
             this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.AccountGridView)).EndInit();
             this.panel9.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            this.panel14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.account_data_gridview)).EndInit();
+            this.panel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.service_data_gridview)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -988,5 +1176,20 @@
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.RichTextBox RNUM_DRIVER_TB;
         private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.DataGridView service_data_gridview;
+        private System.Windows.Forms.DataGridView account_data_gridview;
+        private System.Windows.Forms.Button FILTER_SV;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.ComboBox comboBoxSVI;
+        private System.Windows.Forms.Button button35;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button button34;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button button36;
     }
 }

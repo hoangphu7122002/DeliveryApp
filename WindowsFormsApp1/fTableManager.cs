@@ -296,5 +296,23 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void driverToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fDriver f = new fDriver();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void employeeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fEmployee f = new fEmployee();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+
+
     }
 }
